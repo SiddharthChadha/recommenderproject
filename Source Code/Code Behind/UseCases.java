@@ -11,7 +11,7 @@ public class UseCases {
 		UserProfile user = new UserProfile(name, uniqueId, mobile, address, interests);
 		
 		//Returns true if the user has been added to the project and false otherwise
-		return project.addUserToProject(user);
+		return ProjectProfile.addUserToProject(user);
 	}
 
 
