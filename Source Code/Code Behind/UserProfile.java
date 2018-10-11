@@ -1,24 +1,48 @@
-public class UserProfile{
+package sample;
 
-	private String name;
-	private int uniqueId;
-	private int mobile;
-	private Address address;
-	private String[] interests;
-	//private projectHistory
-	
-	public String getName(){ return this.name; }
-	public int getUniqueId(){ return this.uniqueId; }
-	public int getMobile(){ return this.mobile; }
-	
-	
-	
-	public UserProfile( String name, int uniqueId, int mobile, Address address, String[] interests ){
-		this.name = name;
-		this.uniqueId = uniqueId;
-		this.mobile = mobile;
-		this.address = address;
-		this.interests = interests;
-	}
+import java.util.List;
+
+public class UserProfile {
+
+    private String name;
+    private String password;
+    private String contact;
+    private String location;
+    private List<String> interests ;
+    //private projectHistory
+
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public List<String> getInterests() {
+        return interests;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+
+    public UserProfile(String name, String password, String contact, String address, List<String> interests)
+    {
+        this.name = name;
+        this.password=password;
+        this.contact = contact;
+        this.location = address;
+        this.interests = interests;
+    }
+
 
 }
